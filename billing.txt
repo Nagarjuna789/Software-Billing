@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+void  main()
+{
+    char a[20];
+    int price,gst=0,total=0;
+    printf("Billing software for Cafe Coffee Day-CCD");
+    printf("\n========================================\n");
+    printf("\n Enter Name of the Item:");
+    scanf("%s",&a);
+    printf("\n Enter Price of the item:");
+    scanf("%d",&price);
+     gst=((price/100)*18);
+     total=price+gst;
+    printf("\n\n Cafe Coffee Day\n\n");
+    printf("\n=====================================\n");
+    printf("\n Item   price  gst   total \n");
+    printf("\n %s      %d     %d     %d \n",a,price,gst,total);
+    printf("\n=======================================\n");
+    printf("\n Thank You! Do Visit Again");
+    
+}
